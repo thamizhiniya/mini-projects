@@ -1,35 +1,31 @@
-<<<<<<< HEAD
- The "SafeLog" Password Validator
 
-Business Case: A cybersecurity firm needs a tool for their "Employee Portal" that forces employees to create strong passwords. Standard "if-else" isn't enough; they need a modular approach.
+SafeLog Password Validator
 
-Problem Statement:Build a Password Strength Checker that validates a string against corporate security policies and provides specific feedback on why a password failed.
+Overview
 
-Student Tasks:
-1.The Policy: The password must be:
-○At least 8 characters long.
-○Contain at least one Uppercase letter.
-○Contain at least one Digit (0-9).
-2.Looping Logic: Use a for loop to iterate through the string and Character.isUpperCase() / Character.isDigit() to check requirements.
-3.Feedback System: Instead of just saying "Invalid," the program should print specifically: "Missing a digit" or "Too short."
-4.Retry Mechanism: Use a while loop to keep asking the user for a password until they enter a valid one.
+The SafeLog Password Validator is a Java console application that enforces basic password security rules. It validates user input against defined policies and provides specific feedback when requirements are not met.
 
-Deliverable: A single PasswordValidator.java file that demonstrates string manipulation and loop control.
-=======
- The "SafeLog" Password Validator
 
-Business Case: A cybersecurity firm needs a tool for their "Employee Portal" that forces employees to create strong passwords. Standard "if-else" isn't enough; they need a modular approach.
+Objectives
 
-Problem Statement:Build a Password Strength Checker that validates a string against corporate security policies and provides specific feedback on why a password failed.
+* Enforce strong password creation
+* Provide clear, specific validation feedback
+* Demonstrate use of loops, conditionals, and string handling in Java
 
-Student Tasks:
-1.The Policy: The password must be:
-○At least 8 characters long.
-○Contain at least one Uppercase letter.
-○Contain at least one Digit (0-9).
-2.Looping Logic: Use a for loop to iterate through the string and Character.isUpperCase() / Character.isDigit() to check requirements.
-3.Feedback System: Instead of just saying "Invalid," the program should print specifically: "Missing a digit" or "Too short."
-4.Retry Mechanism: Use a while loop to keep asking the user for a password until they enter a valid one.
+Password Policy
 
-Deliverable: A single PasswordValidator.java file that demonstrates string manipulation and loop control.
->>>>>>> a221d6b812034f127bfca38b05b9a0aaaca422af
+A valid password must:
+
+* Be at least 8 characters long
+* Contain at least one uppercase letter (A–Z)
+* Contain at least one digit (0–9)
+
+Features
+
+* Continuous input until a valid password is entered
+* Character-by-character validation using a loop
+* Detailed error messages for each failed condition
+* Efficient use of boolean flags for tracking validation
+
+
+
