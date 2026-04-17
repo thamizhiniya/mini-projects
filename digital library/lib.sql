@@ -7,9 +7,9 @@ name varchar(100) not null,
 department varchar(50) not null);
 
 create table issuedbooks(sno int primary key,
-studentid int,
-bookid int,
-issuedate date,
+studentid int not null,
+bookid int not null,
+issuedate date not null,
 returndate date,
 foreign key(studentid) references students(studentid),
 foreign key(bookid) references books(bookid));
