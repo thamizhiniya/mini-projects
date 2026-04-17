@@ -13,7 +13,7 @@ def calculate_fare(km,type,hour):
 
     return fare
 
-type=input("Enter the type of car (economy, premium, suv): ")
+type=input("Enter the type of car (economy, premium, suv): ").lower()
 if type not in Rates:
     print("Service Not Available")
 else:

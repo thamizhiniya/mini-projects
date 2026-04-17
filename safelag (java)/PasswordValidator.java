@@ -21,6 +21,10 @@ public class PasswordValidator {
                     hasdigit = true;
                 }
             }
+             if(hasupper && hasdigit && lengthValid){
+                System.out.println("Password is accepted.");
+                break;
+            }
             if(!hasupper){
                 System.out.println("Password must contain at least one uppercase letter.");
                
@@ -33,10 +37,7 @@ public class PasswordValidator {
                 System.out.println("Password must be at least 8 characters long.");
                 
             }
-            if(hasupper && hasdigit && lengthValid){
-                System.out.println("Password is accepted.");
-                break;
-            }
+            
             else{
                 System.out.println("Please try again.");
             }
